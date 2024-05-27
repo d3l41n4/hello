@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+html {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.title-section {
+  position: relative; 
+  height: 80vh; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title-text {
+  position: relative; 
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center; 
+  z-index: 1; 
+
+  @media (max-width: 1200px) {
+    max-width: 60%;
+  }
+}
+
+.title-number {
+  position: relative; 
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 20vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1; 
+}
+
+.title-number h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+#rotating-mesh-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.scroll-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow-y: auto; 
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Hide the scroll bars */
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.project-page {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.project-page img {
+  width: 60%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-top: 20px;
+  width: 60%;
+  padding: 50px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.project-video {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px; 
+}
+
+.home-button,
+.about-button {
+  font-weight: bolder;
+  position: fixed; 
+  display: inline-block;
+  padding: 5px 5px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: background-color 0.3s ease; 
+  z-index: 1000; 
+}
+
+.home-button {
+  left: 20px; 
+}
+
+.home-button:hover {
+  background-color: #0000ff; 
+}
+
+.about-button {
+  right: 20px; 
+}
+
+.about-button:hover {
+  background-color: #0000ff; 
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home {
+  position: relative;
+}
+
+/* Hide scroll bars on the body element */
+body {
+  overflow: hidden;
+}
+
+/* Hide scroll bars on the parent element of .scroll-container */
+.parent-element {
+  overflow: hidden;
+}
