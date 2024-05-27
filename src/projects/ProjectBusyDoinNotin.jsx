@@ -1,5 +1,4 @@
 import React from 'react'
-import busyVideo from '../assets/busy-video.mp4';
 import '../index.css';
 
 function ProjectBusyDoinNotin() {
@@ -7,7 +6,7 @@ function ProjectBusyDoinNotin() {
     <div className="project-page">
       <h1>BUSY DOIN NOTHIN (2020)</h1>
       <video className="project-video" controls>
-        <source src={busyVideo} type="video/mp4" />
+        <source src="hello/assets/busy-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <p className="project-description">I want to capture an essence of time. Starting points were different

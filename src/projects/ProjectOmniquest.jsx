@@ -1,7 +1,4 @@
 import React from 'react'
-import omniquest from '../assets/omniquest.png';
-import omniquestVideo from '../assets/omniquest-video.mp4';
-import omniquestDocument from '../assets/omniquest-dokument.pdf';
 import '../index.css';
 
 
@@ -10,7 +7,7 @@ function ProjectOmniquest() {
     <div className="project-page">
       <h1>OMNIQUEST (2020)
       </h1>
-      <img src={omniquest} alt="Koala" />
+      <img src="hello/assets/omniquest.png" alt="Koala" />
       <p className="project-description">Omniquest is a prototype application that took form in 2020
       during the cooperative online programm "Open Culture BW meet VR" organised by 
       the Media and Film society Baden-Württemberg. 
@@ -34,18 +31,11 @@ on mass gathering exhibitions, find themselves under threat.A valuable experienc
         years later and travel together to Karlsruhe and meet .... 
         The programm ended in a online final presentation between the art museums, 
        cultural institutions and students involved in the programm, centered around 
-    
-
-      
-      
        </p>
       <video className="project-video" controls>
-        <source src={omniquestVideo} type="video/mp4" />
+        <source src="hello/assets/omniquest-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <a href={omniquestDocument} className="project-document-link" target="_blank" rel="noopener noreferrer">
-        View Koala Project Document
-      </a>
     </div>
   )
 }

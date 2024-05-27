@@ -15,14 +15,14 @@ const RotatingMesh = ({ rotation }) => {
   };
 
   const textures = useMemo(() => [
-    { texture: loadTexture('/src/assets/daises.png'), path: 'daises' },
-    { texture: loadTexture('/src/assets/substitution.jpg'), path: 'substitution' },
-    { texture: loadTexture('/src/assets/frontiers.png'), path: 'nextfrontiers' },
-    { texture: loadTexture('/src/assets/omniquest.png'), path: 'omniquest' },
-    { texture: loadTexture('/src/assets/koala.png'), path: 'koala' },
-    { texture: loadTexture('/src/assets/spieglein.jpg'), path: 'spieglein' },
-    { texture: loadTexture('/src/assets/busy.png'), path: 'busydoinotin' },
-    { texture: loadTexture('/src/assets/beichten.png'), path: 'beichten' },
+    { texture: loadTexture('hello/assets/daises.png'), path: 'daises' },
+    { texture: loadTexture('hello/assets/substitution.jpg'), path: 'substitution' },
+    { texture: loadTexture('hello/assets/frontiers.png'), path: 'nextfrontiers' },
+    { texture: loadTexture('hello/assets/omniquest.png'), path: 'omniquest' },
+    { texture: loadTexture('hello/assets/koala.png'), path: 'koala' },
+    { texture: loadTexture('hello/assets/spieglein.jpg'), path: 'spieglein' },
+    { texture: loadTexture('hello/assets/busy.png'), path: 'busydoinotin' },
+    { texture: loadTexture('hello/assets/beichten.png'), path: 'beichten' },
   ], []);
 
   const planeGeometry = useMemo(() => {

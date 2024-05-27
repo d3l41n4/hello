@@ -1,12 +1,11 @@
 import React from 'react';
-import daises from '../assets/daises.jpg';
 import '../index.css';
 
 function ProjectDaises() {
   return (
     <div className="project-page">
       <h1>ONE IN A MILLION DAISES (2024)</h1>
-      <img src={daises} alt="Koala" />
+      <img src="hello/assets/daises.jpg" alt="Koala" />
       <p className="project-description"> One in a million daises is a speculative artefact that 
       blends the softness of textiles with the intricacies of creative coding to archieve 
       and represent the diverse perspectives, expectations and emotions that people make on 
@@ -22,7 +21,7 @@ function ProjectDaises() {
        absence and presence. 0s and 1s attempting to calculate our desires, map our preferences, and 
        predict our destinies. In doing so, they become the unseen weavers of our romantic narratives, 
        attempting to stitch hearts together in a virtual embrace.</p>
-      <img src={daises} alt="Koala" />
+       <img src="/assets/daises.jpg" alt="Koala" />
       <p className="project-description">Within the world of online dating, following rule 1: 
        be attractive - rule 2: don’t be unattractive, we are presented with an illusion of infinite choice.
        The swipes and clicks offer a plethora of potential partners, each promising a unique connection.
